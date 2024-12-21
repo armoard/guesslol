@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessLoL</title>
+    <link rel="stylesheet" href="/room.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="container">
+
+    <div id="waiting-room">
+        <h2>Waiting for other players...</h2>
+        <ul id="waiting-room-players">
+
+        </ul>
+        <button id="start-round-btn" onclick="startRound()">Start game</button>
+        <div id="round-starting-message" class="hidden">
+            <p class="round-starting-text">The round is starting...</p>
+        </div>
+    </div>
+
+
+    <div id="game-container" class="hidden">
+        <h2>Guess The Champion!</h2>
+        <div id="championInfo">
+            <img id="championImage" src="" alt="Imagen del Campeón" draggable="false" style="display: none;">
+            <div id="abilities">
+                <img id="ability1" src="/ChampionSquare.png" alt="Ability 1" draggable="false" style="display: block;">
+                <img id="ability2" src="/ChampionSquare.png" alt="Ability 2" draggable="false" style="display: block;">
+                <img id="ability3" src="/ChampionSquare.png" alt="Ability 3" draggable="false" style="display: block;">
+                <img id="ability4" src="/ChampionSquare.png" alt="Ability 4" draggable="false" style="display: block;">
+            </div>
+        </div>
+        <div id="timer">
+            <p id="time">Remaining time: 25 seconds</p>
+        </div>
+    </div>
+
+    <div id="sidebar-container">
+        <div id="chat-container">
+            <h2>Chat</h2>
+            <div id="chat-messages">
+            </div>
+            <div id="respuesta-form">
+                <input id="messageInput" type="text" placeholder="Write your message">
+                <button id="sendButton" type="button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+        <div class="scoreboard-wrapper">
+            <div id="scoreBoard">
+                <ul id="scoreboard-players">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/room.js" defer></script>
+</body>
+</html>

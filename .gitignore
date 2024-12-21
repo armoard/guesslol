@@ -1,0 +1,42 @@
+# Maven
+target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Build
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IDEs y editores
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+.sts4-cache/
+.apt_generated
+.factorypath
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Logs
+*.log
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno (en el futuro)
+.env
+
+# Otros
+HELP.md

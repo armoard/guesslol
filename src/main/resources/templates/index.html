@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessLoL</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>Welcome to GuessLoL</h1>
+<p>Go ahead and play with your friends!</p>
+
+<div id="mainContainer">
+    <div id="roomContainer">
+        <h2>Available Rooms</h2>
+        <div id="roomList">Loading rooms...</div>
+    </div>
+
+    <form id="roomForm" onsubmit="return false;">
+        <h2>Join or Create a Room</h2>
+
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="button" onclick="joinRoom()">Join Room</button>
+        <div id="joinRoomError" class="error-message" style="display: none;"></div>
+
+        <label for="room">Create a room:</label>
+        <input type="text" id="room" name="roomInput">
+        <button type="button" onclick="createRoom()">Create Room</button>
+        <div id="createRoomError" class="error-message" style="display: none;"></div>
+        <input type="hidden" id="selectedRoom" name="selectedRoom">
+    </form>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/index.js" defer></script>
+</body>
+</html>
