@@ -2,18 +2,14 @@
 
 For this project i tried to explore real-time communication using WebSockets with Java Spring Boot. It’s a fun game where you and your friends can guess League of Legends champions in interactive chat rooms.
 
-The project is live and hosted!
-Try it out here: [guesslol.com](https://guesslol.com)
+This project is not currently hosted.
 
 # How to Test
 
-Open the application in a normal browser window.
-
-Open another window in incognito mode.
-
-Use different usernames and join the same room name.
-
-Start guessing and see real-time messages appear instantly in both windows.
+-Open the application in a normal browser window.
+-Open another window in incognito mode.
+-Use different usernames and join the same room name.
+-Start guessing and see real-time messages appear instantly in both windows.
 
 # Technologies
 ## Backend
