@@ -4,13 +4,6 @@ For this project i tried to explore real-time communication using WebSockets wit
 
 This project is not currently hosted.
 
-# How to Test
-
--Open the application in a normal browser window.
--Open another window in incognito mode.
--Use different usernames and join the same room name.
--Start guessing and see real-time messages appear instantly in both windows.
-
 # Technologies
 ## Backend
 
